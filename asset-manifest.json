@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/amitedge/static/css/main.c856bddd.css",
-    "main.js": "/amitedge/static/js/main.a00ff391.js",
+    "main.js": "/amitedge/static/js/main.d2316278.js",
     "static/js/453.624f0c8d.chunk.js": "/amitedge/static/js/453.624f0c8d.chunk.js",
     "static/media/coaching.jpg": "/amitedge/static/media/coaching.3c42f86952a13cb87c63.jpg",
     "index.html": "/amitedge/index.html",
     "main.c856bddd.css.map": "/amitedge/static/css/main.c856bddd.css.map",
-    "main.a00ff391.js.map": "/amitedge/static/js/main.a00ff391.js.map",
+    "main.d2316278.js.map": "/amitedge/static/js/main.d2316278.js.map",
     "453.624f0c8d.chunk.js.map": "/amitedge/static/js/453.624f0c8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c856bddd.css",
-    "static/js/main.a00ff391.js"
+    "static/js/main.d2316278.js"
   ]
 }
