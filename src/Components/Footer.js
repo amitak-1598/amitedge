@@ -30,9 +30,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#"><img src="../icons/facebook.webp" alt="Facebook" /></a>
-            <a href="#"><img src="/icons/instagram.Webp" alt="Instagram" /></a>
-            <a href="#"><img src="/icons/youtube.webp" alt="YouTube" /></a>
+            <a href="#"><img src={`${process.env.PUBLIC_URL}/icons/facebook.webp`} alt="Facebook" /></a>
+            <a href="#"><img src={`${process.env.PUBLIC_URL}/icons/instagram.webp`} alt="Instagram" /></a>
+            <a href="#"><img src={`${process.env.PUBLIC_URL}/icons/youtube.webp`} alt="YouTube" /></a>
           </div>
         </div>
 

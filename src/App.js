@@ -66,13 +66,8 @@ function AboutComponent(){
 }
 
 
-
-
-
-
-
 function App() {
-  const basename= process.env.NODE_ENV=="production"?"/Eagle" :"/";
+  const basename= process.env.NODE_ENV=="production"?"/amitedge" :"/";
 
            
 
