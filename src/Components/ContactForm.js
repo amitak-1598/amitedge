@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import '../ContactForm.css';
+import axios from "axios";
+import Swal from 'sweetalert2'
+
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +25,42 @@ const ContactForm = () => {
     console.log('Form submitted:', formData);
 
     // Optional: Add API call here
+
+    console.log(formData)
+    var myObject={
+      "email":formData.email,
+      "name":formData.name,
+      "message":formData.message,
+      "subject":formData.subject,
+      "createdBy":"ADMIN"
+    }
+console.log(myObject)
+
+axios.post("https://dashboard.amitak.xyz/contactus",myObject).then((response)=>{
+console.log(response)
+
+Swal.fire({
+  title: "Query Submitted",
+  text: "We will contact you soon!",
+  icon: "success"
+});
+
+
+
+
+}).catch((err)=>{
+  console.log(err)
+  Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+})
+
+
+
+
 
     // Clear form
     setFormData({
