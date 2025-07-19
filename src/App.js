@@ -8,6 +8,7 @@ import Courses from './Components/Courses';
 import Results from './Components/Results';
 import About from './Components/About';
 import HomeCards from './Components/HomeCards';
+import WhyChooseUs from './Components/WhyChooseUs';
 
 
 function Home(){
@@ -17,6 +18,7 @@ function Home(){
      <Navbar />
      <MiddleSection />
      <HomeCards />
+     <WhyChooseUs />
      <Footer />
     </>
   );
