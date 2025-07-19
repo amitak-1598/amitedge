@@ -1,6 +1,6 @@
 import React from 'react';
 import '../MiddleSection.css';
-import heroImage from '../coaching.jpg'; 
+
 
 const MiddleSection = () => {
   return (
@@ -15,7 +15,7 @@ const MiddleSection = () => {
           <a href="#courses" className="hero-btn">Explore Courses</a>
         </div>
         <div className="hero-image">
-          <img src={heroImage} alt="Students preparing" />
+          <img src={`${process.env.PUBLIC_URL}/coaching.jpg`} alt="Students preparing" />
         </div>
       </div>
     </section>

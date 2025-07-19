@@ -7,6 +7,7 @@ import ContactForm from './Components/ContactForm';
 import Courses from './Components/Courses';
 import Results from './Components/Results';
 import About from './Components/About';
+import HomeCards from './Components/HomeCards';
 
 
 function Home(){
@@ -15,6 +16,7 @@ function Home(){
     <>
      <Navbar />
      <MiddleSection />
+     <HomeCards />
      <Footer />
     </>
   );
