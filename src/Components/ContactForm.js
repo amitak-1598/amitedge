@@ -63,12 +63,12 @@ Swal.fire({
 
 
     // Clear form
-    // setFormData({
-    //   name: '',
-    //   email: '',
-    //   subject: '',
-    //   message: '',
-    // });
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
   };
 
   return (
