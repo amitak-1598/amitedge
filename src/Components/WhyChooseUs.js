@@ -1,44 +1,44 @@
 import React from "react";
 import "../WhyChooseUs.css";
-import { FaChalkboardTeacher,  FaTabletAlt, FaBook, FaUserCheck } from "react-icons/fa";
+import { FaChalkboardTeacher, FaClock, FaMobileAlt, FaUserShield } from "react-icons/fa";
 
 const benefits = [
   {
-    icon: <FaChalkboardTeacher className="benefit-icon" />,
+    icon: <FaChalkboardTeacher />,
     title: "Expert Faculty",
-    description: "Learn from IITians, Doctors & experienced teachers with years of track record.",
+    description: "Learn from experienced teachers who specialize in JEE preparation.",
   },
   {
-    icon: <FaTabletAlt className="benefit-icon" />,
-    title: "Mobile Friendly",
-    description: "Fully responsive content for mobile, tablet & desktop learning.",
+    icon: <FaClock />,
+    title: "Flexible Schedule",
+    description: "Access classes and materials any time, at your own pace.",
   },
   {
-    icon: <FaBook className="benefit-icon" />,
-    title: "Complete Material",
-    description: "Topic-wise notes, question banks, NCERT solutions & mock papers.",
+    icon: <FaMobileAlt />,
+    title: "Learn Anywhere",
+    description: "Study on mobile, desktop, or tablet anytime, anywhere.",
   },
   {
-    icon: <FaUserCheck className="benefit-icon" />,
-    title: "Student-Centric",
-    description: "Live doubt sessions, progress tracking & personal mentorship.",
+    icon: <FaUserShield />,
+    title: "Doubt Support",
+    description: "Ask questions 24x7 and get answers from our expert team.",
   },
 ];
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-section">
-      <h2 className="section-title">Why Choose Amitedge?</h2>
-      <div className="benefits-grid">
+    <div className="why-choose-us-section">
+      <h2 className="why-title">Why Choose Our Coaching?</h2>
+      <div className="why-cards">
         {benefits.map((benefit, index) => (
-          <div key={index} className="benefit-card">
-            {benefit.icon}
-            <h3>{benefit.title}</h3>
-            <p>{benefit.description}</p>
+          <div className="why-card" key={index}>
+            <div className="icon">{benefit.icon}</div>
+            <h3 className="title">{benefit.title}</h3>
+            <p className="description">{benefit.description}</p>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

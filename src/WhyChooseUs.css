@@ -1,40 +1,88 @@
-.why-choose-section {
-  padding: 60px 20px;
-  background-color: #f9f9ff;
+.why-choose-us-section {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
   text-align: center;
 }
 
-.section-title {
-  font-size: 2.2rem;
-  font-weight: bold;
+.why-title {
+  font-size: 32px;
   margin-bottom: 40px;
-  color: #333;
+  font-weight: bold;
+  color: #222;
 }
 
-.benefits-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.benefit-card {
-  background-color: white;
-  padding: 25px;
+.why-card {
+  background: white;
+  padding: 30px 20px;
   border-radius: 15px;
-  width: 250px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
 }
 
-.benefit-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-}
-
-.benefit-icon {
-  font-size: 2.5rem;
-  color: #2f80ed;
+.why-card .icon {
+  font-size: 36px;
+  color: #007bff;
   margin-bottom: 15px;
+  transition: color 0.4s ease;
 }
 
+.why-card .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.why-card .description {
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.why-card:hover {
+  background-color: #0056b3;
+  transform: translateY(-6px);
+}
+
+.why-card:hover .title,
+.why-card:hover .description {
+  color: white;
+}
+
+.why-card:hover .icon {
+  color: #ffc107; /* Bright yellow to stand out on blue */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 24px;
+  }
+
+  .why-card {
+    padding: 20px 15px;
+  }
+
+  .why-card .icon {
+    font-size: 28px;
+  }
+
+  .why-card .title {
+    font-size: 18px;
+  }
+
+  .why-card .description {
+    font-size: 14px;
+  }
+}

@@ -7,7 +7,7 @@ import ContactForm from './Components/ContactForm';
 import Courses from './Components/Courses';
 import Results from './Components/Results';
 import About from './Components/About';
-import HomeCards from './Components/HomeCards';
+import HomeCardsSlider from './Components/HomeCardsSlider';
 import WhyChooseUs from './Components/WhyChooseUs';
 
 
@@ -17,7 +17,7 @@ function Home(){
     <>
      <Navbar />
      <MiddleSection />
-     <HomeCards />
+     <HomeCardsSlider />
      <WhyChooseUs />
      <Footer />
     </>
