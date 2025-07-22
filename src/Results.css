@@ -1,67 +1,43 @@
 .results-section {
-  background: #f9fafb;
-  padding: 4rem 1rem;
+  padding: 40px 20px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 .results-section h2 {
   font-size: 2.5rem;
-  color: #1f2937;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
-.results-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  max-width: 1100px;
-  margin: auto;
+.results-slider {
+  padding: 0 20px;
 }
 
 .result-card {
-  background: linear-gradient(to bottom right, #eef2ff, #e0f2fe);
-  padding: 2rem 1.5rem 1.5rem;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #c7d2fe;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.result-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-.student-img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+.student-icon-container {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid #3b82f6;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  position: relative;
+  top: -20px; /* Push it slightly outside the card */
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
-.result-card h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #1e40af;
-  margin-bottom: 0.5rem;
-}
-
-.result-card p {
-  font-size: 1rem;
-  color: #374151;
-  margin-bottom: 0.5rem;
-}
-
-.result-card span {
-  display: inline-block;
-  margin-top: 0.6rem;
-  padding: 0.3rem 0.8rem;
-  background-color: #2563eb;
-  color: white;
-  font-weight: 600;
-  border-radius: 999px;
-  font-size: 0.95rem;
+.student-icon {
+  font-size: 48px;
+  color: #4a4a4a;
 }
