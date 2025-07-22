@@ -1,42 +1,61 @@
 .courses-section {
-  background: #f8fafc;
+  background: linear-gradient(135deg, #f9fbfd, #eef2f7);
   padding: 4rem 1rem;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .courses-section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #1f2937;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .course-card {
   background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.08);
+}
+
+.course-icon {
+  font-size: 2.5rem;
+  background: #dbeafe;
+  color: #2563eb;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .course-card h3 {
-  color: #2563eb;
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  color: #1d4ed8;
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
 }
 
 .course-card p {
   color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
