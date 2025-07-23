@@ -1,6 +1,7 @@
 .results-section {
   padding: 40px 20px;
   text-align: center;
+  background-color: #f0f8ff;
 }
 
 .results-section h2 {
@@ -13,9 +14,9 @@
 }
 
 .result-card {
-  background: #fff;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
   border-radius: 12px;
-  padding: 20px;
+  padding: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
