@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">AmitEdge</Link>
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} className="navbar-logo" alt='Image not found'/>
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" className="nav-link">Home</Link></li>
