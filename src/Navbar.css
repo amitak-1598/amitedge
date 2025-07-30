@@ -8,6 +8,10 @@ body {
   font-family: 'Segoe UI', 'Inter', sans-serif;
 }
 
+
+
+
+
 /* Navbar Container */
 .navbar {
   background-color: #ffffff;
@@ -36,6 +40,10 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-family: 'Segoe UI', sans-serif;
+  /* border: 2px solid red; */
+
+  height: 120px;
+  width: 150px;
   
 }
 
