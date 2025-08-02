@@ -6,17 +6,19 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content container">
         <div className="footer-left">
-          <div className="logo">AmitEdge</div>
+          {/* <div className="logo">AmitEdge</div> */}
+           <img src={`${process.env.PUBLIC_URL}/logo.png`} className="footer-logo" alt='Image not found'/>
+           
           <p className="tagline">
             Empowering students for JEE, NEET, and Board excellence.
           </p>
           <p>
             <FaMapMarkerAlt className="icon" />
-            B‑23, Sector 14, Rohini, New Delhi – 110085
+            1/50-CA-50 Surendranagar, Aligarh, Uttar Pradesh – 202001
           </p>
           <p>
             <FaPhoneAlt className="icon" />
-            +91 98765 43210
+            +91 81910 64692
           </p>
           <p>
             <FaEnvelope className="icon" />

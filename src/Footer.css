@@ -83,6 +83,20 @@
   color: #7a9ba9;
 }
 
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  /* border: 2px solid red; */
+
+  height: 160px;
+  width: 160px;
+  
+}
+
 
 @media (max-width: 768px) {
   .footer-content {
