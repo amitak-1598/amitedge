@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-contact">
-          <span id='icon-1'><FaPhoneAlt className="icon" /> +91 98765 43210</span>
+          <span id='icon-1'><FaPhoneAlt className="icon" /> +91 81910 64692</span>
           <span><FaEnvelope className="icon" /> support@amitedge.com</span>
         </div>
 
